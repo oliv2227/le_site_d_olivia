@@ -222,7 +222,7 @@ html, body {
 }
 
 .liste-page.anniv {
-  background: linear-gradient(to bottom, rgb(238, 54, 54), rgb(240, 33, 129), rgb(226, 26, 233), rgb(158, 36, 230));
+  background: linear-gradient(to bottom, rgb(68, 118, 226), rgb(60, 179, 226), rgb(60, 129, 175), rgb(6, 51, 119));
   min-height: 100vh; /* S'assure que le fond couvre toute la hauteur de la page */
   padding: 20px;
 }
@@ -271,7 +271,7 @@ html, body {
   font-family: 'Bungee', cursive;
   font-size: 1rem;
   padding: 10px 20px;
-  background-color: rgb(197, 42, 211);
+  background-color: rgb(78, 152, 236);
   border: 3px solid #ffe605;
   text-shadow: 0 0 10px #fffb1c;
   color: rgb(57, 235, 235);
@@ -289,3 +289,78 @@ html, body {
   flex-direction: column; /* Aligne les éléments en colonne */
 }
 
+/* ---------- PAGE "LISTE ANNIVOLIV" ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+html, body {
+  height: 100%; /* Permet à la page de prendre toute la hauteur */
+  margin: 0; /* Évite les marges par défaut du navigateur */
+}
+
+.liste-page.kdos {
+  background: linear-gradient(to bottom, rgb(238, 54, 54), rgb(240, 33, 129), rgb(226, 26, 233), rgb(158, 36, 230));
+  min-height: 100vh; /* S'assure que le fond couvre toute la hauteur de la page */
+  padding: 20px;
+}
+
+.liste-page.kdos h1 {
+  font-family: 'Bungee', cursive;
+  font-size: 3rem;
+  color: lightblue;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px 8px rgb(213, 248, 15);
+}
+
+.liste-page.kdos .image-container img {
+  display: block;
+  margin: 50px auto;
+  max-width: 50%;
+  height: auto;
+}
+
+.chateau {
+  position: absolute; /* Pour positionner les boules avec "top" et "left"/"right" */
+  width: auto; /* Laisse l'image à sa taille naturelle ou ajuste-la si nécessaire */
+  height: auto;
+}
+
+.chateau.small {
+  width: 50px; /* Ajuste la taille de l'image si nécessaire */
+  height: auto; /* La hauteur s'adapte à la largeur */
+}
+
+.chateau.medium {
+  width: 100px; /* Ajuste la taille de l'image si nécessaire */
+  height: auto;
+}
+
+.chateau.left {
+  left: 10;
+}
+.chateau.right {
+  right: 10;
+}
+
+/* Sélecteur plus spécifique pour le bouton de la page anniv */
+.liste-page.kdos .back-button {
+  font-family: 'Bungee', cursive;
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: rgb(197, 42, 211);
+  border: 3px solid #ffe605;
+  text-shadow: 0 0 10px #fffb1c;
+  color: rgb(57, 235, 235);
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: auto;
+}
+
+/* Ajout de style pour centrer le conteneur parent */
+.liste-page.kdos {
+  display: flex;
+  justify-content: center; /* Centre les éléments horizontaux */
+  align-items: center; /* Centre les éléments verticalement */
+  flex-direction: column; /* Aligne les éléments en colonne */
+}
